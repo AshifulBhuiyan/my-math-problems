@@ -1,0 +1,67 @@
+%\documentclass{book}
+\documentclass[openany]{book} %starts any page instead of odd number
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{hyperref}
+\usepackage{graphicx}  % For inserting images
+\usepackage{titling}   % For better title customization
+
+\usepackage{xcolor}
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{sansmathfonts}
+\usepackage{href-ul}
+
+% Define a theorem-like environment for problems
+\newtheorem{problem}{Problem}[chapter]
+
+\begin{document}
+\input{title page/title1.tex}
+
+\tableofcontents
+
+\chapter*{Introduction}
+\addcontentsline{toc}{chapter}{Introduction}
+\input{Introduction/introduction.tex}
+
+\chapter{Algebra}
+\input{Chapters/algebra.tex}
+\chapter{Calculus}
+\input{Chapters/calculus.tex}
+\chapter{Differential Equations}
+\input{Chapters/differential_equations.tex}
+\chapter{Real Analysis}
+\input{Chapters/real_analysis.tex}
+\chapter{Complex Analysis}
+\input{Chapters/complex_analysis.tex}
+\chapter{Linear Algebra}
+\input{Chapters/linear_algebra.tex}
+\chapter{Abstract Algebra}
+\input{Chapters/abstract_algebra.tex}
+\chapter{Functional Analysis}
+\input{Chapters/functional_analysis.tex}
+\chapter{Topology}
+\input{Chapters/topology.tex}
+\chapter{Probability}
+\input{Chapters/probability.tex}
+\chapter{Statistics}
+\input{Chapters/statistics.tex}
+\chapter{Combinatorics}
+\input{Chapters/combinatorics.tex}
+\chapter{Measure Theory}
+\input{Chapters/measure_theory.tex}
+\chapter{Set Theory}
+\input{Chapters/set_theory.tex}
+\chapter{Number Theory}
+\input{Chapters/number_theory.tex}
+\chapter{Geometry}
+\input{Chapters/geometry.tex}
+\chapter{Game Theory}
+\input{Chapters/game_theory.tex}
+\chapter{Logic}
+\input{Chapters/logic.tex}
+
+\chapter*{Appendix}
+\addcontentsline{toc}{chapter}{Appendix}
+\input{Appendix/appendix.tex}
+
+\end{document}

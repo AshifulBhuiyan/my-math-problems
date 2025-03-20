@@ -1,0 +1,48 @@
+\begin{titlepage}
+    \begin{center}
+        % Colored top bar
+        \begin{tikzpicture}[remember picture, overlay]
+            \fill[cyan!50] (current page.north west) rectangle ([xshift=4cm]current page.north east);
+        \end{tikzpicture}
+        
+        \vspace*{1cm}
+        
+        % Logo with modern shadow effect
+        \begin{tikzpicture}
+            \node[inner sep=0] at (0,0) {\includegraphics[width=0.3\textwidth]{logo.png}};
+            \fill[black,opacity=0.1] (0.3,-0.3) rectangle (3.3,-0.4);
+        \end{tikzpicture}
+        
+        \vspace{1.5cm}
+        
+        % Title with shadow effect
+        {\Huge \textbf{\textsf{MATH PROBLEMS}}} \\
+        \vspace{0.5cm}
+        
+        % Subtitle with decorative line
+        {\Large \textsf{A Compilation of Challenging and Fun Problems}} \\
+        \vspace{0.5cm}
+        \rule{\textwidth}{1pt} \\[2cm]
+        
+        % Decorative math symbols
+        {\color{gray!60}\Huge $\triangleright\,\square\,\circ\,\triangleleft$} \\[1cm]
+        
+        % Contact information in modern box
+        \begin{tikzpicture}
+            \node[fill=cyan!30, rounded corners, inner sep=10pt] {
+                \begin{tabular}{c}
+                    {\large Questions? Feedback?} \\
+                    \href{mailto:ashiful@conquestace.com}{\large \textbf{ashiful@conquestace.com}}
+                \end{tabular}
+            };
+        \end{tikzpicture}
+        
+        \vfill
+        
+        % Bottom decorative element
+        \begin{tikzpicture}[remember picture, overlay]
+            \fill[cyan!50] (current page.south west) rectangle ([yshift=1cm]current page.south east);
+        \end{tikzpicture}
+        {\color{white}\large\textsf{Conquest Academic  \today}}
+    \end{center}
+\end{titlepage}

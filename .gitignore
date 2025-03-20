@@ -1,0 +1,32 @@
+# LaTeX intermediate files
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# LaTeX output files (PDF, etc.)
+*.pdf
+
+# Editor-specific files (e.g., vim, emacs)
+*~ 
+.vscode/
+*.swp
+*.swo
+*.swn
+
+# macOS system files
+.DS_Store
+
+# TeX Live specific
+texput/
+
+# Backup files
+*.bak
